@@ -1,29 +1,31 @@
-import {Text, View, StyleSheet, Button, } from "react-native";
+import { Text, View, StyleSheet, } from "react-native";
+import Button from "../components/button/index";
 
-function Index(){
+function Index() {
 
-    function handleSubmit(){
+    function handleSubmit() {
         const name = "Thais!";
-       alert(`Olá, ${name}`);
+        alert(`Olá, ${name}`);
     }
 
-    return(
+    return (
         <View style={styles.container}>
             <Text style={styles.text}>
                 Hello, world!
             </Text>
-            <Button title="Enviar" onPress={handleSubmit}/>
+            <Button label={"Enviar"} onPress={handleSubmit} />
+            
         </View>
     );
 }
 
 const styles = StyleSheet.create({
-    text:{
+    text: {
         color: "blue",
         fontSize: 26,
         fontWeight: "bold",
     },
-    container:{
+    container: {
         flex: 1,
         padding: 32,
         justifyContent: "center",
