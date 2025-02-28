@@ -1,8 +1,9 @@
 import { TextInput, TextInputProps } from "react-native";
+import styles from "./styles";
 
 
 function Input({...rest}:TextInputProps){
-    return <TextInput {...rest}/>
+    return <TextInput style={styles.input}{...rest}/>
 
 }
 
