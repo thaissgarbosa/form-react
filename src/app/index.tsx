@@ -11,10 +11,9 @@ function Index() {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.text}>
-                Hello, world!
-            </Text>
-            <Input/>
+            <Text style={styles.text}>Hello, world!</Text>
+            <Input placeholder="Maria Silva" label="Nome"/>
+            <Input placeholder="18 anos" label="Idade"/>
             <Button label={"Enviar"} onPress={handleSubmit}  activeOpacity={1}/>
             <Button label={"Continuar"} onPress={handleSubmit}  />
         </View>
@@ -31,6 +30,7 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 32,
         justifyContent: "center",
+        gap: 12,
     },
 });
 
