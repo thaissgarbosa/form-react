@@ -1,8 +1,8 @@
 import { Text, View, StyleSheet, } from "react-native";
 import {useState} from "react";
 
-import Button from "../components/button/index";
-import Input from "../components/input";
+import Button from "@/components/button/index";
+import Input from "@/components/input/index";
 
 function Index(){
 
